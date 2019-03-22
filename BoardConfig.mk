@@ -45,6 +45,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TW_INCLUDE_CRYPTO := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000
@@ -89,14 +90,12 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2280
 #LZMA_RAMDISK_TARGETS := recovery
 
-# TWRP specific build flags
-#RECOVERY_VARIANT := twrp
+# TWRP 
 TW_DEVICE_VERSION := 3
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 4095
@@ -117,7 +116,6 @@ TW_SPECIFIC_MILITARY_TIME := "1"
 TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd servicemanager hwservicemanager keymaster-3-0
 
 TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor
-#TW_CRYPTO_SYSTEM_VOLD_DEBUG := /system/bin/strace
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
