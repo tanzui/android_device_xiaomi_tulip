@@ -23,7 +23,6 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -88,7 +87,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2280
-#LZMA_RAMDISK_TARGETS := recovery
 
 # TWRP 
 TW_DEVICE_VERSION := 3
@@ -118,4 +116,3 @@ TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd servicemanager hwservicemanager keymaster-
 TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
